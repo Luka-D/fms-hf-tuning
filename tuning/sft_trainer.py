@@ -359,7 +359,6 @@ def train(
     )
     training_args.packing = packing  # Inject packing into the training args
 
-    dataset_kwargs = {}
     if is_pretokenized_dataset(
         data_args.training_data_path or data_args.validation_data_path
     ):
