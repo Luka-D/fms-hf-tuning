@@ -334,7 +334,7 @@ def train(
     if is_pretokenized_dataset(
         data_args.training_data_path or data_args.validation_data_path
     ):
-        dataset_kwargs["skip_prepare_dataset"] = True
+        training_args.dataset_kwargs = {"skip_prepare_dataset": True}
     trainer = SFTTrainer(
         model=model,
         tokenizer=tokenizer,
@@ -344,7 +344,6 @@ def train(
         args=training_args,
         callbacks=trainer_callbacks,
         peft_config=peft_config,
-        dataset_kwargs=dataset_kwargs,
     )
 
     # We track additional metrics and experiment metadata after trainer object creation
