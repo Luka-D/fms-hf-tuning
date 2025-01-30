@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Purpose will fail
+import not_a_library
+
 # Standard
 from typing import Callable, Dict, List, Optional, Union
 import dataclasses
