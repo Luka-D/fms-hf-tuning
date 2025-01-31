@@ -12,10 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Purpose will fail
-import not_a_library
-
-abcdefghijkl
 
 # Standard
 from typing import Callable, Dict, List, Optional, Union
@@ -73,6 +69,9 @@ from tuning.utils.error_logging import (
 )
 from tuning.utils.logging import set_log_level
 from tuning.utils.tokenizer_data_utils import tokenizer_and_embedding_resize
+
+# Purpose will fail
+raise ValueError(f"Error for debugging")
 
 
 def train(
