@@ -15,6 +15,8 @@
 # Purpose will fail
 import not_a_library
 
+abcdefghijkl
+
 # Standard
 from typing import Callable, Dict, List, Optional, Union
 import dataclasses
